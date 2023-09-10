@@ -16,7 +16,14 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
+      - name: Test with pytest
+        run: |
+            pytest --cov api.calculator
+      - run: echo "Test completed"
       - name: Upload coverage reports to Codecov
         uses: codecov/codecov-action@v3
         env:
             CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+      - name: Test with pytest
+        run: |
+            pytest --cov api.calculator
