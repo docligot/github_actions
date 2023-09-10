@@ -43,4 +43,4 @@ jobs:
             CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
       - name: Test with pytest
         run: |
-            pytest --cov api.calculator
+            pytest api.calculator
