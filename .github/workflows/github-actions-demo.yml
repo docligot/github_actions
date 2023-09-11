@@ -37,6 +37,7 @@ jobs:
       - name: Test with pytest
         run: |
             pytest api/calculator/test_calculator.py
+            pytest tests/test_geoboundaries.py
             pytest --cov
       - run: echo "Test completed"
       - name: Upload coverage reports to Codecov
