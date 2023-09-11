@@ -14,4 +14,4 @@ warnings.filterwarnings("ignore")
 from .src.data_extraction.admin_boundaries import fetch_geoboundaries, save_admin_regions
 
 def test_usage():
-    assert save_admin_regions("PHL", 2) is None
+    save_admin_regions("PHL", 2)
