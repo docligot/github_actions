@@ -30,6 +30,7 @@ jobs:
             pip install pytest-cov
             pip install geopandas
             pip install requests
+            pip install pytrends
       - name: Lint with flake8
         run: |
             # stop the build if there are Python syntax errors or undefined names
