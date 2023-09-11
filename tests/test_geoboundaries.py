@@ -11,7 +11,7 @@ import warnings
 
 warnings.filterwarnings("ignore")
 
-from .admin_boundaries import Admin_boundaries
+from .admin_boundaries import fetch_geoboundaries, save_admin_regions
 
 def test_usage():
-    assert Admin_boundaries.save_admin_regions("PHL", 2) != null
+    assert save_admin_regions("PHL", 2) != null
