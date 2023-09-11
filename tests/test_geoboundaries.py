@@ -4,7 +4,7 @@ import pytest
 import os
 import json
 import requests
-import geopandas as gpd
+import time
 from fiona.crs import from_epsg
 from time import sleep
 import warnings
