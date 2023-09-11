@@ -45,7 +45,7 @@ jobs:
             # flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
       - name: Test with pytest
         run: |
-            pytest api/calculator/test_calculator.py
+            #pytest api/calculator/test_calculator.py
             pytest tests/test_geoboundaries.py
             pytest tests/test_demographics.py
             #pytest tests/test_google_trends.py
@@ -53,7 +53,7 @@ jobs:
             #pytest tests/test_nasa_appeears.py
             #pytest tests/test_nasa_worldview.py
             #pytest tests/test_osm.py
-            pytest tests/test_demographic_data.py
+            #pytest tests/test_demographic_data.py
             pytest --cov
       - run: echo "Test completed"
       - name: Upload coverage reports to Codecov
