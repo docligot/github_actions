@@ -1,7 +1,7 @@
 import os
 import geopandas as gpd
 import pytest
-from .admin_boundaries import fetch_geoboundaries, save_admin_regions
+from .admin_boundaries import Admin_boundaries
 
 # Define test cases for the fetch_geoboundaries function
 @pytest.mark.parametrize("iso_country_code, admin_level", [
@@ -10,7 +10,7 @@ from .admin_boundaries import fetch_geoboundaries, save_admin_regions
     ("US", 10),  # Test with invalid admin level
 ])
 def test_fetch_geoboundaries(iso_country_code, admin_level):
-    geoBoundary = fetch_geoboundaries(iso_country_code, admin_level)
+    geoBoundary = Admin_boundaries.fetch_geoboundaries(iso_country_code, admin_level)
 
     if iso_country_code == "INVALID" or admin_level > 5:
         # For invalid inputs, the function should return None
@@ -26,7 +26,7 @@ def test_fetch_geoboundaries(iso_country_code, admin_level):
     ("US", 1),  # Test with valid inputs
 ])
 def test_save_admin_regions(iso_country_code, admin_level, tmpdir):
-    geoBoundary = fetch_geoboundaries(iso_country_code, admin_level)
+    geoBoundary = Admin_boundaries.fetch_geoboundaries(iso_country_code, admin_level)
     
     if geoBoundary is not None:
         # Create a temporary directory for testing
