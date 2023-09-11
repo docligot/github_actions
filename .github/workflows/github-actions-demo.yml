@@ -42,6 +42,11 @@ jobs:
             pytest api/calculator/test_calculator.py
             pytest tests/test_geoboundaries.py
             pytest tests/test_demographics.py
+            pytest tests/test_google_trends.py
+            pytest tests/test_meteorological.py
+            pytest tests/test_nasa_appeears.py
+            pytest tests/test_nasa_worldview.py
+            pytest tests/test_osm.py
             pytest --cov
       - run: echo "Test completed"
       - name: Upload coverage reports to Codecov
