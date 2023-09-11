@@ -34,6 +34,9 @@ jobs:
             pip install wget
             pip install osmnx
             pip install retrying
+            pip install rasterio
+            pip install typing
+            pip install shapely
       - name: Lint with flake8
         run: |
             # stop the build if there are Python syntax errors or undefined names
