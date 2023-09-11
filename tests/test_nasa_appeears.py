@@ -5,7 +5,7 @@ import os
 import time
 import logging
 
-from .src.data_extraction.nasa_appeears import fetch_nasa_appeears, get_earth_data_token
+from .src.data_extraction.nasa_appeears import fetch_nasa_appeears, get_earthdata_token
 
 def test_nasa_appeears():
     headers = get_earthdata_token()  # Initialize headers by fetching token once
