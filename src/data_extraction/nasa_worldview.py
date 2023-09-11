@@ -9,6 +9,7 @@ import wget
 import datetime
 import os
 import json
+import time
 from datetime import timedelta
 
 # Function to get latitude and longitude
