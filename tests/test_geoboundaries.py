@@ -1,7 +1,7 @@
 import os
 import geopandas as gpd
 import pytest
-from .src/data_extraction/admin_boundaries import fetch_geoboundaries, save_admin_regions
+from .src.data_extraction.admin_boundaries import fetch_geoboundaries, save_admin_regions
 
 # Define test cases for the fetch_geoboundaries function
 @pytest.mark.parametrize("iso_country_code, admin_level", [
