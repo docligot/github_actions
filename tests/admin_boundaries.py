@@ -16,7 +16,6 @@ warnings.filterwarnings("ignore")
 
 class Admin_boundaries: 
 
-    @staticmethod
     def fetch_geoboundaries(iso_country_code, admin_level):
         api_url = f"https://www.geoboundaries.org/gbRequest.html?ISO={iso_country_code}&ADM=ADM{admin_level}"
         print(api_url)
@@ -44,9 +43,8 @@ class Admin_boundaries:
         print("Max retries reached. Exiting.")
         return None
 
-    @staticmethod
     def save_admin_regions(iso_country_code, admin_level):
-        geoBoundary = fetch_geoboundaries(iso_country_code, admin_level)
+        geoBoundary = self.fetch_geoboundaries(iso_country_code, admin_level)
         if geoBoundary is None:
             print("Received empty data from API.")
             return
