@@ -1,5 +1,6 @@
 name: Delete Workflows
 run-name: ${{ github.actor }} is deleting workflows 🚀
+on: [push]
 jobs:
     Delete-Workflows:
         runs-on: ubuntu-latest
