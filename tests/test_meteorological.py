@@ -6,10 +6,10 @@ import random
 import os
 import json
 
-from .src.data_extraction.meteorological import get_lan_lon, get_weather, fetch_weather_data
+from .src.data_extraction.meteorological import get_lat_lon, get_weather, fetch_weather_data
 
 def test_get_lan_lon():
-    assert get_lan_lon(1) == 1
+    assert get_lat_lon(1) == 1
 
 def test_get_weather():
     assert get_weather(1, 2, 3, 4, 5) == 15
