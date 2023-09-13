@@ -8,7 +8,7 @@ import json
 
 from .src.data_extraction.meteorological import get_lat_lon, get_weather, fetch_weather_data
 
-def test_get_lan_lon():
+def test_get_lat_lon():
     assert get_lat_lon(1) == 1
 
 def test_get_weather():
