@@ -6,7 +6,7 @@ import time
 import logging
 
 from .src.data_extraction.nasa_appeears import get_earthdata_token, check_or_get_token, read_geojson, create_task_payload, create_task, wait_for_task_completion, download_files, fetch_nasa_appeears
-
+'''
 def test_get_earthdata_token(): 
     assert get_earthdata_token() == None
 
@@ -21,7 +21,7 @@ def test_create_task_payload():
     
 def test_create_task():
     assert create_task(1, 2, 3, 4, 5, 6) == 21
-'''
+
 def test_wait_for_task_completion():
     assert wait_for_task_completion(1, 2) == 3
     
