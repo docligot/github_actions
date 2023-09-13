@@ -15,7 +15,7 @@ from retrying import retry
 ox.settings.timeout = 60
 
 def retry_if_file_not_found_error(exception):
-    return isinstance(exception, FileNotFoundError)
+    return exception
 
 def create_directory(path: str) -> None:
     if not os.path.exists(path):
