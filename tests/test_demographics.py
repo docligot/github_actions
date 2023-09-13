@@ -10,7 +10,7 @@ def test_download_rwi():
     assert download_rwi(1, 2, 3) == 6
     
 def test_fetch_population_density():
-    assert fetch_relative_wealth_index(1, 2, 3) == 6
+    assert fetch_population_density(1, 2, 3) == 6
 
 def test_download_popmap():
-    assert fetch_relative_wealth_index(1, 2, 3, 4) == 10
+    assert download_popmap(1, 2, 3, 4) == 10
