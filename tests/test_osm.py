@@ -17,5 +17,5 @@ def test_create_directory():
     assert create_directory(1) == 1
 
 def test_fetch_osm():
-    assert fetch_osm(1, 2) == "1 2"
+    assert fetch_osm(1, 2) == ["1", 2]
 

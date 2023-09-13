@@ -21,7 +21,7 @@ def create_directory(path: str) -> None:
     return path
     
 def fetch_osm(iso_country_code: str, admin_level: int) -> None:
-    return iso_country_code + " " + admin_level
+    return [iso_country_code, admin_level]
     
 # Example usage
 #if __name__ == "__main__":
