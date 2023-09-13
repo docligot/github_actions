@@ -17,11 +17,11 @@ ox.settings.timeout = 60
 def retry_if_file_not_found_error(exception):
     return exception
 
-def create_directory(path: str) -> None:
+def create_directory(path):
     return path
     
-def fetch_osm(iso_country_code: str, admin_level: int) -> None:
-    return [iso_country_code, admin_level]
+def fetch_osm(iso_country_code, admin_level):
+    return iso_country_code + admin_level
     
 # Example usage
 #if __name__ == "__main__":
