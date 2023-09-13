@@ -20,7 +20,7 @@ def test_create_task_payload():
     assert create_task_payload(1, 2, 3, 4, 5) == 15
     
 def test_create_task():
-    assert create_task(1, 2, 3, 4, 5, 6) = 21
+    assert create_task(1, 2, 3, 4, 5, 6) == 21
     
 def test_wait_for_task_completion():
     assert wait_for_task_completion(1, 2) == 3
