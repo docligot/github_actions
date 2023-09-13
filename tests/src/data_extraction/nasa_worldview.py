@@ -18,7 +18,7 @@ def get_lat_lon(query):
 
 # Function to generate bounding box
 def latlong_gen(latlong, diff):
-    return latlong, diff
+    return latlong + diff
     
 # Function to generate URL
 def url_gen(full_date_txt, bbox, layers, width, height, wrap):
