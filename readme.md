@@ -1,3 +1,8 @@
+[![Test Coverage](https://github.com/docligot/github_actions/actions/workflows/test-coverage.yml/badge.svg)](https://github.com/docligot/github_actions/actions/workflows/test-coverage.yml)
+
+[![codecov](https://codecov.io/gh/docligot/github_actions/graph/badge.svg?token=5W5VMSO11N)](https://codecov.io/gh/docligot/github_actions)
+
+
 # Github Actions repository
 
 Did this repository to test github actions
